@@ -12,9 +12,12 @@
     "url": "git+https://github.com/alissonmgsantos/webview.git"
   },
   "author": "alissonmgsantos",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/alissonmgsantos/webview/issues"
   },
-  "homepage": "https://github.com/alissonmgsantos/webview#readme"
+  "homepage": "https://github.com/alissonmgsantos/webview#readme",
+  "devDependencies": {
+    "electron": "^11.1.1"
+  }
 }
