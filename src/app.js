@@ -1,7 +1,10 @@
 const { app, BrowserWindow } = require('electron');
+const config = require('./config');
+
+let mainWindow;
 
 function createWindow() {
-  const win = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
@@ -9,7 +12,7 @@ function createWindow() {
     },
   });
 
-  win.loadURL('https://www.google.com.br');
+  mainWindow.loadURL(config.url);
 }
 
 app.whenReady().then(createWindow);
