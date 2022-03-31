@@ -12,6 +12,12 @@ function Tray(browserWindow) {
       enabled: false,
     },
     {
+      label: 'Home',
+      click(e) {
+        browserWindow.loadFile('index.html');
+      },
+    },
+    {
       label: 'Open',
       click(e) {
         browserWindow.show();
