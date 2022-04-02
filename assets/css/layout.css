@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 :root {
-  --start-color: #00C9FF;
-  --end-color: #92FE9D;
-  --p-color: #929DA6;
   --button-background: #00C9FF;
-  --input-background: #e4eff8;
+  --input-background: #ffffffcc;
+  --input-text-color: #929DA6;
 }
 
 * {
@@ -22,8 +20,7 @@
 
 body {
   height: 100vh;
-  background: var(--start-color);
-  background: linear-gradient(to right, var(--start-color), var(--end-color)) no-repeat;
+  background-image: linear-gradient(40deg, #acb86b 0, #a1bb70 3.33%, #96bd76 6.67%, #8abf7d 10%, #7dc186 13.33%, #70c38f 16.67%, #62c498 20%, #54c5a3 23.33%, #43c5ad 26.67%, #31c6b7 30%, #18c6c2 33.33%, #00c5cc 36.67%, #00c5d5 40%, #00c4de 43.33%, #00c3e6 46.67%, #0cc1ed 50%, #2ebff3 53.33%, #46bdf7 56.67%, #5bbafa 60%, #6eb7fc 63.33%, #80b4fc 66.67%, #92b1fb 70%, #a2adf9 73.33%, #b1a9f4 76.67%, #bfa5ef 80%, #cba2e9 83.33%, #d69ee1 86.67%, #e09bd9 90%, #e898cf 93.33%, #ef96c6 96.67%, #f495bc 100%);
   font-family: 'Nunito', sans-serif;
   list-style-type: none;
 }
@@ -34,6 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+
 }
 
 .wrapper .content {
@@ -41,12 +39,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #ffffffb8;
   padding: 1.5rem;
   width: 100%;
   max-width: 32rem;
   min-width: 13rem;
   border-radius: 0.625rem;
+
 }
 
 .title {
@@ -68,6 +67,7 @@ body {
   border-radius: 6.25rem;
   width: 100%;
   text-align: center;
+  color: var(--input-text-color);
 }
 
 .wrapper .content form button {
@@ -86,7 +86,6 @@ body {
   flex-direction: column;
   margin-top: 1rem;
   font-size: large;
-  color: #fff;
 }
 
 @media screen and (max-width: 720px) {
