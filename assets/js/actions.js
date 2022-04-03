@@ -11,13 +11,12 @@ querySelector('#form').addEventListener('submit', (event) => {
     if (!/(http(s?)):\/\//i.test(url)) {
       url = 'http://' + url;
     }
-    window.location.replace(url);
+    return window.location.replace(url);
   }
   querySelector('#message_error').innerHTML = 'Your link is invalid.';
 });
 
 querySelector('#input_url').addEventListener('keyup', (event) => {
-  console.log(!!querySelector('#input_url').value);
   if (!!querySelector('#input_url').value) {
     querySelector('#message_error').innerHTML = null;
   }
